@@ -118,8 +118,12 @@ def extract_all_yt_instances(content):
         
 def main():
     # 1. Convert .swf, .mkv file to mp4.
+    # file_in = 'WLASL_v0.3.json'
+    file_in = 'top_40_words.json'
     convert_everything_to_mp4()
-
+    
+    # file_in = 'WLASL_v0.3.json'
+    file_in = 'top_40_words.json'
     content = json.load(open('WLASL_v0.3.json'))
     extract_all_yt_instances(content)
 
