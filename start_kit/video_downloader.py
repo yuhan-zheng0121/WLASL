@@ -144,10 +144,11 @@ def download_yt_videos(indexfile, saveto='raw_videos'):
     
 
 if __name__ == '__main__':
+    # file = 'WLASL_v0.3.json'
+    file = 'top_40_words.json'
     logging.info('Start downloading non-youtube videos.')
-    download_nonyt_videos('WLASL_v0.3.json')
-
+    download_nonyt_videos(file)
+    
     check_youtube_dl_version()
     logging.info('Start downloading youtube videos.')
-    download_yt_videos('WLASL_v0.3.json')
-
+    download_yt_videos(file)
